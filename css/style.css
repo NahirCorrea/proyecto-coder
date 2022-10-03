@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.color-tipografico {
+    color: white;
+}
+
+/* Header */
+
+.header {
+    width: auto;
+    background-color: #1A4789;
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__search{
+    width: 50vh;
+}
+
+.header__nav ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+}
+
+
+.portada {
+    background-color: #1a4689ec;
+    display: flex;
+    justify-content: center;
+}
+
+section ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50vh;
+}
+
+/* Main */
+
+.destacados__inicio {
+    background-color: #1a4689ec;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Tarjeta */
+
+.tarjeta {
+    border-radius: 10px;
+    border: 1px solid black;
+    width: 300px;
+    height: 400px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tarjeta__descrip{
+    text-align: center;
+    font-weight: 500;
+}
+
+.tarjeta__precio{
+    font-weight: 600;
+}
+
+.btn__comprar{
+    border: solid #A52502;
+    background-color: #A52502;
+    color: white;
+    border-radius: 10px;
+    padding: 10px 12px ;
+
+}
+
+.btn__ver{
+    border:solid #A52502;
+    border-radius: 10px;
+    color:gray;
+    padding: 10px 12px;
+}
+
+.slider{
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+footer {
+    width: auto;
+    background-color: #1A4789;
+    color: white;
+    padding: 2%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
