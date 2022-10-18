@@ -13,44 +13,67 @@
 <!-- Inicio de mi web -->
 
 <body>
-    <header class="header">
-        <div class="header__logo">
-            <img src="./assets/logo-3.png" alt="Logo de San Libreria y Kiosco" width="150px" class="fondo-azul" />
+
+    <header class="navbar navbar-expand-lg bg-header border-bottom">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img src="./assets/logo-3.png" alt="" class="w-25"></a>
+
+            <div class="container">
+                <form class="d-flex">
+                    <input class="form-control" type="search" placeholder="¿Que estas buscando?" aria-label="Search">
+                </form>
+            </div>
+
+            <nav class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link t-color" aria-current="page" href="#">Crear Cuenta</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link t-color" href="#">Iniciar Sesion</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
-
-        <form class="header__search">
-            <input type="search" placeholder="¿Que estas buscando?" />
-        </form>
-
-        <nav header__nav>
-            <ul>
-                <li>CREAR CUENTA</li>
-                <li>INICIAR SESION</li>
-            </ul>
-        </nav>
 
     </header>
 
-    <section class="portada">
-        <div class="portada__inicio">
-            <ul>
-                <li><a class="color-tipografico" href="./index.html"> Inicio</a></li>
-                <li><a class="color-tipografico" href="./pages/productos.html">Productos</a></li>
-                <li><a class="color-tipografico" href="./pages/quienes-somos.html">Quienes somos</a></li>
-                <li><a class="color-tipografico" href="./pages/contacto.html">Contacto</a></li>
-                <li><a class="color-tipografico" href="./pages/donde-estamos.html">Donde estamos</a></li>
-            </ul>
+    <section class="navbar navbar-expand-lg bg-header ">
+        <div class="container">
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+                <ul class="navbar-nav">
+                    <li><a class="nav-link t-color" aria-current="page" href="./index.html">Inicio</a></li>
+                    <li><a class="nav-link t-color" href="./pages/productos.html">Productos</a></li>
+                    <li><a class="nav-link t-color" href="./pages/quienes-somos.html">Quienes Somos</a></li>
+                    <li><a class="nav-link t-color" href="./pages/contacto.html">Contacto</a></li>
+                    <li><a class="nav-link t-color" href="./pages/donde-estamos.html">Donde Estamos</a></li>
+                </ul>
+            </div>
         </div>
     </section>
 
 
     <main class="mainIndex">
-        <!-- imagenes en carrusel -->
-        <section>
-            <img src="" alt="" />
-            <img src="" alt="" />
-            <img src="" alt="" />
-        </section>
+
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./assets/faber.castell.jpg" class="d-block w-100" alt=" img faber castell">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/parker.jpg" class="d-block w-100" alt="img lapicera parker">
+                </div>
+                <div class="carousel-item">
+                    <img src="./assets/posca.png" class="d-block w-100" alt="img fibrones posca">
+                </div>
+            </div>
+        </div>
+
 
         <!-- inicio de seccion destacados -->
         <section class="destacados">
@@ -100,7 +123,108 @@
 
     <!-- Inicio del footer -->
 
-    <footer>
+    <footer class="container-fluid bg-header t-color">
+
+        <div class="container">
+
+            <div class="row align-items-baseline">
+
+                <!-- <div class="d-flex justify-content-center align-items-baseline"> -->
+                <div class="d-flex flex-column align-items-center col-md-3">
+                    <h4>Navegacion</h4>
+                    <ul>
+                        <li>
+                            <a href="./index.html">Inicio</a>
+                        </li>
+                        <li>
+                            <a href="./pages/productos.html">Productos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/quienes-somos.html">Quienes Somos</a>
+                        </li>
+                        <li>
+                            <a href="./pages/contacto.html">Contacto</a>
+                        </li>
+                        <li>
+                            <a href="./pages/donde-estamos.html">Donde Estamos</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="d-flex flex-column align-items-center col-md-3">
+                    <h4>Medios de Pago</h4>
+                    <span>Efectivo</span>
+                    <span>Tarjetas</span>
+
+                    <div class="d-flex">
+                        <img class="f-img p-1" src="./assets/visa.png" alt="img tarjeta visa">
+                        <img class="f-img p-1" src="./assets/mastercar.png" alt="img tarjeta mastercard">
+                        <img class="f-img p-1" src="./assets/mercadopago.png" alt="img mercado pago">
+                    </div>
+                </div>
+                <!-- </div> -->
+
+
+                <!-- <div class="d-flex justify-content-center align-items-baseline"> -->
+                <div class="d-flex flex-column p-2 text-center col-md-3">
+                    <h4>Contactanos</h4>
+                    <span>011-38952944</span>
+                    <span>sanlibreriakiosco@gmail.com</span>
+                    <span>Mendiondo 1498, Luis Guillon</span>
+                </div>
+
+                <div class="d-flex flex-column align-items-center col-md-3">
+                    <h4>Redes Sociales</h4>
+                    <i class="bi bi-instagram"></i>
+                    <i class="bi bi-facebook"></i>
+                </div>
+                <!-- </div> -->
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- <footer>
 
         <div class="Navegacion">
             <h4>Navegacion</h4>
@@ -138,8 +262,8 @@
             </ul>
         </div>
 
-    </footer>
+    </footer> -->
     <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
-</html>
+</html>∫
