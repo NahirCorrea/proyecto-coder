@@ -26,8 +26,6 @@ ul li{
     width: 40px;
 }
 
-
-
 /* Main */
 
     .destacados__inicio {
@@ -83,4 +81,8 @@ ul li{
     display: flex;
     gap: 10px;
 }
+
+/* Quienes somos? */
+
+
 
