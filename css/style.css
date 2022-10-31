@@ -5,8 +5,16 @@
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
+h1{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 1rem;
+}
+
 a{
-text-decoration: none;
+    text-decoration: none;
 }
 
 ul li{
@@ -82,11 +90,5 @@ ul li{
     gap: 10px;
 }
 
-/* Quienes somos? */
 
-/* Donde estamos  */
-
-.ubicacion{
-    
-}
 
