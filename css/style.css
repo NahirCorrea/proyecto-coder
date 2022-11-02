@@ -37,6 +37,7 @@ ul li{
 /* Main */
 
     .destacados__inicio {
+    font-size: 30px;
     margin-top: 2px;
     background-color: #1a4689ec;
     color: white;
