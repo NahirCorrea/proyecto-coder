@@ -5,6 +5,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>San Libreria & Kiosco</title>
@@ -12,10 +17,10 @@
 
 <!-- Inicio de mi web -->
 
-<body>
-    <header class="navbar navbar-expand-lg bg-header border-bottom">
-        <div class="container">
-            <a class="navbar-brand" href="#"><img src="./assets/logo-3.png" alt="" class="w-25"></a>
+<body class="body">
+    <header class="navbar navbar-expand-md bg-header border-bottom d-flex flex-column">
+        <div class="container-fluid">
+            <a class="navbar-brand " href="#"><img src="./assets/logo-3.png" alt="logo san libreira kiosco" class="w-50"></a>
 
             <div class="container">
                 <form class="d-flex">
@@ -23,7 +28,7 @@
                 </form>
             </div>
 
-            <nav class="collapse navbar-collapse" id="navbarNav">
+            <nav class="container d-flex justify-content-center navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item">
                         <a class="nav-link t-color" aria-current="page" href="#">Crear Cuenta</a>
@@ -32,9 +37,11 @@
                         <a class="nav-link t-color" href="#">Iniciar Sesion</a>
                     </li>
                 </ul>
-
-                <i class="bi bi-basket2"></i>
             </nav>
+
+            <div class="container d-flex justify-content-center fs-2">
+                <i class="bi bi-cart-plus t-color"></i>
+            </div>
         </div>
 
     </header>
@@ -79,16 +86,15 @@
         <!-- inicio de seccion destacados -->
 
         <div>
-            <h2 class=" destacados destacados__inicio">Destacados</h2>
+            <h2 class="destacados__inicio">Destacados</h2>
         </div>
 
         <section>
-            <div class="container">
-                <div class="row justify-content-center">
+            <div class="container-md p-3">
+                <div class="row justify-content-center slider">
 
                     <article class="tarjeta">
-                        <img src="./assets/lapices-color.jpg" alt="lapices de colores" width="200px"
-                            class="tarjeta__img"/>
+                        <img src="./assets/lapices-color.jpg" alt="lapices de colores" class="tarjeta__img" />
                         <h3 class="tarjeta__descrip">Lapices de colores Giotto</h3>
                         <span class="tarjeta__precio">$670</span>
                         <a href="" class="btn__comprar">Comprar</a>
@@ -96,7 +102,7 @@
                     </article>
 
                     <article class="tarjeta">
-                        <img src="./assets/cuadernos.jpg" alt="cuaderno rivadavia" width="250px" class="tarjeta__img" />
+                        <img src="./assets/cuadernos.jpg" alt="cuaderno rivadavia"class="tarjeta__img" />
                         <h3 class="tarjeta__descrip">Cuadernos Rivadavia</h3>
                         <span class="tarjeta__precio">$950</span>
                         <a href="" class="btn__comprar">Comprar</a>
@@ -104,8 +110,7 @@
                     </article>
 
                     <article class="tarjeta">
-                        <img src="./assets/microfibra.jpg" alt="microfibras stabilo" width="200px"
-                            class="tarjeta__img" />
+                        <img src="./assets/microfibra.jpg" alt="microfibras stabilo" class="tarjeta__img" />
                         <h3 class="tarjeta__descrip">Microfibras Stabilo</h3>
                         <span class="tarjeta__precio">$500</span>
                         <a href="" class="btn__comprar">Comprar</a>
@@ -113,7 +118,7 @@
                     </article>
 
                     <article class="tarjeta">
-                        <img src="./assets/cuaderno-america.jpg" alt="cuaderno america" width="200px" />
+                        <img src="./assets/cuaderno-america.jpg" alt="cuaderno america" class="tarjeta__img" />
                         <h3 class="tarjeta__descrip">Cuadernos America</h3>
                         <span class="tarjeta__precio">$390</span>
                         <a href="" class="btn__comprar">Comprar</a>
@@ -123,11 +128,75 @@
                 </div>
             </div>
         </section>
+
+        <section>
+            <div>
+                <h2 class="promo__inicio">Promociones</h2>
+            </div>
+
+            <div class="container-md p-3">
+                <div class="row justify-content-center slider">
+
+                    <article class="tarjeta">
+                        <img src="./assets/lapices-color.jpg" alt="lapices de colores" class="tarjeta__img" />
+                        <h3 class="tarjeta__descrip">Lapices de colores Giotto</h3>
+                        <span class="tarjeta__precio">$670</span>
+                        <a href="" class="btn__comprar">Comprar</a>
+                        <a href="" class="btn__ver">Ver</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="./assets/cuadernos.jpg" alt="cuaderno rivadavia" class="tarjeta__img" />
+                        <h3 class="tarjeta__descrip">Cuadernos Rivadavia</h3>
+                        <span class="tarjeta__precio">$950</span>
+                        <a href="" class="btn__comprar">Comprar</a>
+                        <a href="" class="btn__ver">Ver</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="./assets/microfibra.jpg" alt="microfibras stabilo" class="tarjeta__img" />
+                        <h3 class="tarjeta__descrip">Microfibras Stabilo</h3>
+                        <span class="tarjeta__precio">$500</span>
+                        <a href="" class="btn__comprar">Comprar</a>
+                        <a href="" class="btn__ver">Ver</a>
+                    </article>
+
+                    <article class="tarjeta">
+                        <img src="./assets/cuaderno-america.jpg" alt="cuaderno america" class="tarjeta__img" />
+                        <h3 class="tarjeta__descrip">Cuadernos America</h3>
+                        <span class="tarjeta__precio">$390</span>
+                        <a href="" class="btn__comprar">Comprar</a>
+                        <a href="" class="btn__ver">Ver</a>
+                    </article>
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </section>
+
+
     </main>
 
     <!-- Inicio del footer -->
 
-    <footer class="container-fluid bg-header t-color">
+    <footer class="footer container-fluid bg-header t-color">
 
         <div class="container">
 
@@ -179,8 +248,7 @@
 
                 <div class="d-flex flex-column align-items-center col-md-3">
                     <h4>Redes Sociales</h4>
-                    <i class="bi bi-instagram"></i>
-                    <i class="bi bi-facebook"></i>
+                    <i class="bi bi-instagram"><a href="https://www.instagram.com/sanlibreriakiosco/" target="_blank" class="t-color"> Instagram</a></i>
                 </div>
                 <!-- </div> -->
 

@@ -2,8 +2,17 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:"montserrat",sans-serif ;
 }
+
+.body{
+    margin: 0;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
 
 h1{
     font-size: 1rem;
@@ -11,10 +20,12 @@ h1{
 
 h2{
     font-size: 1rem;
+    text-decoration: underline;
 }
 
 a{
     text-decoration: none;
+    color: black;
 }
 
 ul li{
@@ -34,6 +45,8 @@ ul li{
     width: 40px;
 }
 
+
+
 /* Main */
 
     .destacados__inicio {
@@ -45,12 +58,21 @@ ul li{
     text-decoration: underline;
 } 
 
+    .promo__inicio{
+    font-size: 30px;
+    margin-top: 2px;
+    background-color: #1a4689ec;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
 /* Tarjeta */
     .tarjeta {
-    border-radius: 10px;
+    border-radius: 20px;
     border: 1px solid black;
-    width: 300px;
-    height: 450px;
+    width: 250px;
+    height: 350px;
     padding: 5px;
 
     display: flex;
@@ -59,10 +81,15 @@ ul li{
     align-items: center;
 }
 
+.tarjeta__img{
+    width: 150px;
+}
+
 
 .tarjeta__descrip{
     text-align: center;
     font-weight: 500;
+    font-size: 1rem;
 }
 
 .tarjeta__precio{
@@ -92,4 +119,6 @@ ul li{
 }
 
 
-
+.footer{
+    margin-top: auto;
+}
