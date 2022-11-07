@@ -81,6 +81,7 @@ ul li{
 
 .tarjeta__img{
     width: 150px;
+    height: 150px;
 }
 
 
@@ -99,15 +100,15 @@ ul li{
     background-color: #A52502;
     color: white;
     border-radius: 10px;
-    padding: 10px 12px ;
+    padding: 8px 9px ;
 
 }
 
 .btn__ver{
-    border:solid #A52502;
+    border:solid   #A52502;
     border-radius: 10px;
     color:gray;
-    padding: 10px 12px;
+    padding: 4px 8px;
 }
 
 .slider{
