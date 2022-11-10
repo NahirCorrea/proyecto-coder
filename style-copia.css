@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:"montserrat",sans-serif ;
+}
+
+.body{
+    margin: 0;
+    background-color:whitesmoke;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+h1{
+    font-size: 1rem;
+}
+
+h2{
+    font-size: 1rem;
+    text-decoration: underline;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+ul li{
+    list-style: none;
+}
+
+
+.t-color{
+    color: white;
+}
+
+.bg-header{
+    background-color: #1a4689ec;
+}
+
+.f-img{
+    width: 40px;
+}
+
+/* Main */
+
+    .destacados__inicio {
+    font-size: 30px;
+    margin-top: 2px;
+    background-color: #1a4689ec;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+} 
+
+    .promo__inicio{
+    font-size: 30px;
+    margin-top: 2px;
+    background-color: #1a4689ec;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+}
+
+/* Tarjeta */
+    .tarjeta {
+    border-radius: 20px;
+    border: 1px solid gray;
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.tarjeta__img{
+    width: 150px;
+    height: 150px;
+}
+
+
+.tarjeta__descrip{
+    text-align: center;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+.tarjeta__precio{
+    font-weight: 600;
+}
+
+.btn__comprar{
+    border: solid #A52502;
+    background-color: #A52502;
+    color: white;
+    border-radius: 10px;
+    padding: 4px 8px ;
+
+}
+
+.btn__ver{
+    border:solid   #A52502;
+    border-radius: 10px;
+    color:gray;
+    padding: 4px 8px;
+}
+
+.slider{
+    padding: 15px;
+    display: flex;
+    gap: 10px;
+}
+
+
+
+/* footer */
+.footer{
+    margin-top: auto;
+}
